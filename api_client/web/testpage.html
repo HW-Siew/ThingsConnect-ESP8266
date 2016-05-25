@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IOT</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div class="container-fluid" id="RGB">
+		<div class="row" style="padding:20px"> <h3>Test Page</h3> </div>
+        <div class="row" style="padding:20px;padding-top:0">
+			<input type='text' id="custom" />
+		</div>
+		<div class="row" style="padding-bottom:20px">
+			<div class="col-md-4 col-sm-4 col-xs-4">
+                <label> Analog QOS:</label>
+				<button id="an-qos" data-type="analog" type="button" class="btn btn-primary btn-block"> 1</button>
+			</div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <label> Digital QOS:</label>
+				<button id="dg-qos" data-type="digital" type="button" class="btn btn-primary btn-block"> 1</button>
+			</div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <label> Debug Mode:</label>
+				<button id="debug-mode" data-type="digital" type="button" class="btn btn-primary btn-block"> enabled</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<button id="green-btn" data-color="green" type="button" class="btn btn-success btn-block">OFF</button>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<button id="yellow-btn" data-color="yellow" type="button" class="btn btn-warning btn-block">OFF</button>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<button id="red-btn" data-color="red" type="button" class="btn btn-danger btn-block">OFF</button>
+			</div>
+		</div>
+		<div class="row" style="padding:20px">
+            <form>
+				<div class="form-group">
+				  <label for="serial-rx">Serial Rx:</label>
+				  <textarea id="serial-rx" class="form-control" rows="3" disabled></textarea>
+				</div>
+                <div class="form-group">
+                    <label for="form-text">Serial Tx (enter to send):</label>
+                    <textarea id="form-text" class="form-control" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+        <div>
+            <lable> Analog Read : </label>
+            <select id="anread">
+              <option value="0">0</option>
+              <option value="1000">1000</option>
+              <option value="3000">3000</option>
+              <option value="5000">5000</option>
+              <option value="8000">8000</option>
+              <option value="10000">10000</option>
+            </select>
+        </div>
+		<div class="row">
+			<canvas id="myChart" width="600" height="400"></canvas>
+		</div>
+        <div>
+            <lable> Digital Read : </label>
+            <select id="dgread">
+              <option value="0">0</option>
+              <option value="1000">1000</option>
+              <option value="3000">3000</option>
+              <option value="5000">5000</option>
+              <option value="8000">8000</option>
+              <option value="10000">10000</option>
+            </select>
+        </div>
+		<div class="row">
+			<canvas id="myChart2" width="600" height="400"></canvas>
+		</div>
+	</div>
+
+	<!-- dependency -->
+	<!-- Promise polyfill is required for ie -->
+	<script src="/js/es6-promise.min.js"></script>
+	<script src="/js/dist/tsc.js"></script>
+	<script src="/js/test.js"></script>
+</body>
+</html>
