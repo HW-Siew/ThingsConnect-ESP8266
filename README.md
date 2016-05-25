@@ -1,5 +1,5 @@
 # ThingsConnect-ESP8266
-ThingsConnect is a firmware developed on top of the popular WiFi module ESP8266. ThingsConnect aims to simplify the development for Internet of Things (IoT) application by abstracting the connectivity layer and prompting to the high level interaction via ThingsConnect API from various platform. We handle all the firmware development/update and backend server to ensure you can use with ease.
+ThingsConnect is a firmware developed on top of the popular WiFi module ESP8266. ThingsConnect aims to simplify the development for Internet of Things (IoT) application by abstracting the connectivity layer and prompting to the high level interaction via ThingsConnect API from various platform. We handle all the firmware development/update and backend server to ensure you can use with ease. For more information : https://everyweb.co/tsc
 
 
 #  Instruction
@@ -59,3 +59,4 @@ ThingsConnect is a firmware developed on top of the popular WiFi module ESP8266.
 - [ ] REST API development
 - [ ] Android API development
 - [ ] IOS API development
+
