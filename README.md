@@ -5,6 +5,7 @@ ThingsConnect is a firmware developed on top of the popular WiFi module ESP8266.
 - [x] Digital I/O
 - [x] Analog I/O
 - [x] Serial Read/Write
+- [ ] IFTTT
 
 #  Instruction
 
